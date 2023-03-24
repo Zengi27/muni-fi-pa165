@@ -7,8 +7,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Service
 public class GameSchedulerService {
 
-    public final WebClient client = WebClient.create("http://localhost:8080/");
-
     public GameSchedulerDto generate(String leagueName) {
 
         GameSchedulerDto gameScheduler = new GameSchedulerDto();
